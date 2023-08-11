@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- CSS style sheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <!-- google font smythe -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="cover-img">
+                    <div class="headers">
+                        <h1>RIF's Dinner</h1>
+                        <h2>The best lounge in town</h2>
+                    </div>
+                </div>
+            </header>
+            <div class="main-el" id="main-el">
+                <!-- ITEMS GO IN HERE -->
+            </div>
+            <div class="checkout hidden" id="checkout-el">
+                <h3>Your order</h3>
+                <div class="order-items" id="order-items-el">
+                    <!-- ORDERED ITEMS WILL GO IN HERE --> 
+                </div>
+                <div class="total-order" id="total-order-el">
+                    <!-- TOTAL PRICE HERE -->
+                </div>  
+                <button class="order-btn" id="order-btn-el">Complete order</button>
+            </div>
+            <!-- THANKS NOTE -->
+            <div id="thanks-note" class="thanks-note">
+
+            </div>
+            <!-- MODAL -->
+            <div class="modal hidden" id="modal-el">
+                <h3>Enter card details</h3>
+                <form id="form-el">
+                    <input type="text" class="form-txt-input" placeholder="Enter your name" name="name" required>
+                    <input type="text" class="form-txt-input" placeholder="Enter your card number" name= "card-number"required>
+                    <input type="text" class="form-txt-input" placeholder="Enter CVV" name="cvv" required>
+                    <button class="submit-btn" type="submit">submit</button>    
+                </form>
+            </div>
+	    <script src="index.js" type="module"></script>
+        </div>
+    </body>
+</html>
+
